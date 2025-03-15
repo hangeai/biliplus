@@ -23,8 +23,9 @@ biliplus 是一个专为 Bilibili 用户设计的浏览器增强脚本集合，�
 
 ### 方法一：安装油猴脚本（推荐，永久生效）
 
-1. 首先安装油猴插件 [Tampermonkey](https://www.tampermonkey.net/)
-2. 点击下方链接安装需要的脚本:
+1. 首先打开浏览器，启用扩展程序的开发者模式；若这一步在后面才开启，要重启浏览器
+2. 安装篡改猴(又称油猴) [Tampermonkey](https://www.tampermonkey.net/)
+3. 点击下方链接安装需要的脚本:
     - 若 GitHub 可以访问，[点击安装 biliplus-DimAd 脚本(github)](https://github.com/hangeai/biliplus/raw/main/bili-DimAd.user.js)
     - 或备用链接：[点击安装 biliplus-DimAd 脚本(来自作者个人网站)](https://hangeai.com/biliplus/bili-DimAd.user.js)
 
@@ -36,7 +37,7 @@ biliplus 是一个专为 Bilibili 用户设计的浏览器增强脚本集合，�
 4. 打开并复制脚本内容，粘贴到控制台中并按回车执行
    - 方式1，[从 GitHub 复制脚本内容](./bili-DimAd.user.js)，打开并点击 Copy raw file 完成复制
    - 方式2，国内推荐 [从作者个人网站复制脚本内容](https://hangeai.com/biliplus/bili-DimAd-view.html)，打开复制代码
-   - **注意**: 首次使用开发者工具粘贴代码，若出现安全提示，请输入 `allow pasting` 允许粘贴。[查看详情](./images/allow-pasting.jpg)
+   - **注意**: 首次使用开发者工具粘贴代码，若出现安全提示，根据界面语言及提示，请输入 `allow pasting` 或`允许粘贴`。[查看详情](./images/allow-pasting.jpg)
 5. 效果将立即在当前页面显示（注意：刷新页面后效果消失，需重新执行）
 
 ## 🔍 使用说明
