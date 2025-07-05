@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         biliplus-DimAd
 // @namespace    https://hangeai.com/
-// @version      v1.0.0.20250313
+// @version      v1.0.1.20250705
 // @description  为B站首页视频卡片添加推广标记，方便识别广告内容。若发现功能失效, 请更新到最新版本。 
 // @author       hangeai
 // @website      https://hangeai.com/
@@ -95,7 +95,7 @@
                     }
 
                     // 检查节点是否包含目标卡片
-                    if (node.classList.contains('feed-card')) {
+                    if (node.classList.contains('feed-card') || node.classList.contains('bili-feed-card')) {
                         const child = node.querySelector('div.bili-video-card');
                         if (child) {
                             cardsToProcess.add(child);
@@ -107,7 +107,7 @@
         });
         observer.observe(root, {
             childList: true,
-            subtree: false
+            subtree: false  // 监控直接子元素, 保持低开销, 这是高性能的关键, 不要修改这一行代码
         });
     }
 
